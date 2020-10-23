@@ -1,0 +1,15 @@
+﻿CONJECTUREPANEL "Intuicjonistyczny rachunek zdań - lab. 1"
+CURRENTPROOF "¬¬E→¬¬F ⊢ ¬¬(E→F)"
+INFER ¬¬E→¬¬F 
+     ⊢ ¬¬(E→F)
+FORMULAE
+0 ⊥,
+1 ¬(E→F),
+2 E→F,
+3 F,
+4 E,
+5 ¬(E→F),
+6 ¬¬E→¬¬F 
+IS
+SEQ ("¬ intro"[A\5]) (cut[B,C\2,0]) (NEXTGOAL) (cut[B,C\0,0]) ("¬ elim"[B\2]) (hyp[A\2]) (hyp[A\1]) (cut[B,C\2,0]) ("→ intro"[A,B\4,3]) (cut[B,C\3,3]) ("→ elim"[A,B\4,3]) (hyp[A\2]) (hyp[A\4]) (hyp[A\3]) (cut[B,C\0,0]) ("¬ elim"[B\2]) (hyp[A\2]) (hyp[A\1]) (hyp[A\0])
+END
